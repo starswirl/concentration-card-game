@@ -68,6 +68,8 @@ const createCard = (suit) =>
   }));
 
 const JOKER = {
+  id: "-1",
+  value: -1,
   suit: SUIT.JOKER,
 };
 
@@ -76,5 +78,5 @@ const ALL_CARD = [
   ...createCard(SUIT.HEART),
   ...createCard(SUIT.DIAMOND),
   ...createCard(SUIT.CLUB),
-  // JOKER
+  JOKER,
 ];

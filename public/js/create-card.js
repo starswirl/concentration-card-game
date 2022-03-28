@@ -4,14 +4,9 @@ window.onload = function () {
   ALL_CARD.forEach((card) => {
     const newDiv = document.createElement("div");
     newDiv.setAttribute("class", "card");
-    newDiv.style.backgroundImage =
-      "url(../png/card/" +
-      card.suit +
-      "/card_" +
-      card.suit +
-      "_" +
-      card.id +
-      ".png)";
+
+    newDiv.style.backgroundImage = createCardURL(card);
+
     board.appendChild(newDiv);
   });
 };
