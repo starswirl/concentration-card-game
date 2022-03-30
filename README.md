@@ -1,6 +1,5 @@
 # concentration-card-game
-
-concentration-card-game
+Express+nodejsで神経衰弱を作ってみる
 
 ## 起動方法
 
