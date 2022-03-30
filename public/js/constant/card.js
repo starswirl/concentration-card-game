@@ -21,10 +21,10 @@ const CARD_NUMBER = [
     id: "01",
     value: 1,
   },
-  // {
-  //   id: "02",
-  //   value: 2,
-  // },
+  {
+    id: "02",
+    value: 2,
+  },
   // {
   //   id: "03",
   //   value: 3,

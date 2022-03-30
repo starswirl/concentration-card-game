@@ -1,8 +1,6 @@
 /**
  * スタートボタンクリック時に実行する
  */
-
-// スタートボタン
 const startButton = document.getElementById("start");
 
 const startOnClick = (e) => {
@@ -11,8 +9,6 @@ const startOnClick = (e) => {
   e.target.disabled = true;
   // スタート時の音を鳴らす
   startMusic.play();
-  // スタートボタンをDisabledにする
-
   // シャッフルする
   trump.easyShuffle();
   // カードを裏にする
