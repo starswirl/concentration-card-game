@@ -1,6 +1,12 @@
-const startMusic = new Audio("mp3/Onoma-Ding04-2(Short).mp3");
+const startSound = new Audio("mp3/Onoma-Ding04-2(Short).mp3");
 
-const jokerMusic = new Audio("mp3/Onmtp-Negative09-1.mp3");
+const jokerSound = new Audio("mp3/Onmtp-Negative09-1.mp3");
+
+const correctSound = new Audio("mp3/Quiz-Correct_Answer02-1.mp3");
+correctSound.volume = 0.2;
+
+const failureSound = new Audio("mp3/Onmtp-Negative10-1.mp3");
+failureSound.volume = 0.2;
 
 const commonCardMusic = new Audio("mp3/select.mp3");
 
