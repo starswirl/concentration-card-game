@@ -1,0 +1,34 @@
+h1 {
+  color: red;
+}
+.card {
+  width: 54.6px;
+  height: 80px;
+  float: left;
+  cursor: pointer;
+  background-size: 100%;
+}
+.back {
+  background-image: url("../png/card/card_back.png");
+  background-size: 100%;
+}
+.board {
+  width: 100%;
+  height: 400px;
+  background-color: rgb(127, 255, 144);
+  padding: 5px;
+}
+.jump {
+  width: 100px;
+  height: 100px;
+  animation: fuwafuwa 2s infinite;
+}
+
+@keyframes fuwafuwa {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+}
