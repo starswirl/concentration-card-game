@@ -3,7 +3,8 @@ Express+nodejsで神経衰弱を作ってみる
 
 ## 起動方法
 
-`yarn start`
+`yarn start`で
+
 `localhost:3000`にアプリが起動します
 ## 開発方法
 
