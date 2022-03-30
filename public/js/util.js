@@ -14,7 +14,7 @@ const turn = (e) => {
   const targetIndex = div.id;
   const targetCard = trump.getCardById(targetIndex);
   if (targetCard.getValue().suit === "joker") {
-    jokerMusic.play();
+    jokerSound.play();
   } else {
     commonCardMusic.play();
   }
@@ -36,6 +36,8 @@ const turn = (e) => {
       setTimeout(() => {
         // カードが一緒なら
         if (firstCard.getValue().value === secondCard.getValue().value) {
+          // 正解の音
+          correctSound.play();
           // 対象のカードを取り出す
           const newTrampValue = trump.value.filter((card) => {
             return card !== firstCard && card !== secondCard;
@@ -43,6 +45,9 @@ const turn = (e) => {
           trump.setValue(newTrampValue);
           // 終わったカードリストに入れる
           endCardList = [...endCardList, firstCard, secondCard];
+        } else {
+          // 失敗の音
+          failureSound.play();
         }
         // ボードの更新
         const board = document.getElementById("board");

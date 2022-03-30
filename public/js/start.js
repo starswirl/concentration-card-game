@@ -8,7 +8,7 @@ const startOnClick = (e) => {
   // ボタンをdisabled
   e.target.disabled = true;
   // スタート時の音を鳴らす
-  startMusic.play();
+  startSound.play();
   // シャッフルする
   trump.easyShuffle();
   // カードを裏にする
