@@ -13,6 +13,11 @@ const turn = (e) => {
   var div = e.target;
   const targetIndex = div.id;
   const targetCard = trump.getCardById(targetIndex);
+  if (targetCard.getValue().suit === "joker") {
+    jokerMusic.play();
+  } else {
+    commonCardMusic.play();
+  }
   // 1枚目のカードがセットされていない場合セットし終了
   if (firstCard === null) {
     // カードをセット
@@ -79,7 +84,7 @@ const setCardDiv = (cardList, targetParent) => {
     newCardDiv.setAttribute("id", index);
     // onClick
     newCardDiv.onclick = turn;
-
+    // カードの裏面をセット
     newCardDiv.style.backgroundImage = "url(../png/card/card_back.png)";
 
     targetParent.appendChild(newCardDiv);
