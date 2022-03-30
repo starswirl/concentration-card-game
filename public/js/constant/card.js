@@ -7,15 +7,6 @@ const SUIT = {
   JOKER: "joker",
 };
 
-// const CARD_NUMBER = [...Array.from(13)].map((_e, index) => {
-//   const value = index + 1;
-//   const id = value < 10 ? `0${value}` : `${value}`;
-//   return {
-//     id: id,
-//     value: value,
-//   };
-// });
-
 const CARD_NUMBER = [
   {
     id: "01",
