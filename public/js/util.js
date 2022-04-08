@@ -10,6 +10,8 @@ const setDefaultCardDiv = (cardList, targetParent) => {
 
 // クリック時の処理
 const turn = (e) => {
+  // 2回押せないようにする
+  e.target.onclick = ()=>{};
   var div = e.target;
   const targetIndex = div.id;
   const targetCard = trump.getCardById(targetIndex);
